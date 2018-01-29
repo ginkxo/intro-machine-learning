@@ -1,0 +1,91 @@
+== 411 STUDY SCHEDULE ==
+
+_ SATURDAY 16 DECEMBER [5:00 PM]
+
+	X Research paper 1
+	X Research paper 2
+	X Research paper 3
+	X Research paper 4
+	X Research paper 5
+
+	_ Textbook
+		_ Bishop 3.1
+		_ Bishop 4 - 4.3
+	_ Multi-class Classification
+		_ Slides
+	_ Probabilistic Classifiers 
+		_ Slides
+	_ Nearest Neighbour
+		_ Slides
+		_ Textbook: 1.4.2
+	_ Decision Trees
+		_ Slides
+		_ Textbook: 14.4
+
+	X Get past tests
+
+
+_ SUNDAY 17 DECEMBER
+
+	x Neural Networks
+		x Slides I
+		x Slides II
+		x Slides Tut.
+		x Bishop: 5 - 5.3
+	x PCA
+		x Slides
+		- Murphy: 12.2
+		x Tutorial Slides
+	x Clustering
+		x Slides
+		- Bishop: 9.2 - 9.3.2
+		x Tutorial Slides
+	x t-SNE
+		x Slides
+		- Research paper
+
+	x Deep Learning
+	x Backpropagation
+	x Unsupervised Learning
+	x Principal Components Analysis
+
+	x Expectation Maximization
+		x Slides
+		- Bishop: 9.2 - 9.3.2
+	_ SVM and Kernels
+		_ Slides (SVM)
+		_ Slides (Kernels)
+		_ Tutorial Slides
+	x Ensembles
+		x Slides I
+		x Slides II
+		x Gradient Boosting
+		- Bishop: 14.3
+	x Reinforcement Learning
+		x Slides I
+		x Slides II
+		x Tutorial
+
+	x Mixture of Gaussians
+	_ EM Algorithm
+	_ Support Vector Machines
+	x Reinforcement Learning and Control
+
+_ SUNDAY 17 DECEMBER
+
+_ MONDAY 18 DECEMBER
+
+	_ Bias/Variance Tradeoff and Error Analysis
+	_ Evaluation Metrics
+	_ Learning Curves (Stanford Coursera Video)
+
+	_ Logistic Regression Derivations
+	_ Linear Classification Derivations
+
+	_ Algorithm Runthroughs
+	_ Practice Tests
+
+_ TUESDAY 19 DECEMBER
+
+	_ Algorithm Runthroughs
+	_ Practice Tests

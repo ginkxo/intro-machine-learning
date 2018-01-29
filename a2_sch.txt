@@ -1,0 +1,73 @@
+CSC411 A2 PROGRESS
+
+_ Q1
+	x finish writing
+	_ type in latex
+
+_ Q2
+	x 2.0 : data load
+		x load data
+		x plot means for each of the digit classes in training data
+		x record the means
+		x reshape the means into an 8 x 8 2D array to render as image
+		x plot all 10 means side by side, normalized with same scale
+
+	? 2.1 : k-NN
+		x READ THE THEORY
+		x build a K nearest neighbour classifier with Euclidean distance on raw pixel data
+			x query_knn
+			x cross_validation
+			x classification_accuracy
+			x for K = 1, report train and test classification accuracy
+			x for K = 15, report the train and test classification accuracy
+		x find a way to break ties in K > 1, include in report
+		x use 10-fold cross-validation to find optimal K in 1-15 range
+		x report that K value with:
+			x K value
+			_ train classification accuracy
+			_ average accuracy across folds
+			_ test accuracy
+
+	x 2.2 : CONDITIONAL GAUSSIAN
+		x ** READ THE THEORY ** 
+		x CODE TO IMPLEMENT
+			x compute_mean_mles
+			x compute_sigma_mles
+			x plot_cov_diagonal
+			x generative_likelihood
+			x conditional_likelihood
+			x avg_conditional_likelihood
+			x classify_data
+		x fit a set of 10 class-conditional gaussians w/ separate FULL COV MATRIX using max likelihood
+			x Compute mu_kj and Sigma_k for k in 0 .. 9 and j in 1 .. 64
+			x implement the covariance computation w/o np.cov
+				x can add 0.01I to each matrix for stability
+		x plot 8 x 8 image of log of diagonal elems for each Sigma_k. Plot all 10 classes side by side w/ same grayscale
+		x with parameters fit on training set + bayes rule: compute AVERAGE CONDITIONAL LOG-LIKELIHOOD on both TRAIN AND TEST SET. report the value
+		x select the MOST LIKELY POSTERIOR CLASS for EACH TRAINING AND TEST DATA POINT as your PREDICTION. report ACCURACY. 
+
+	? 2.3 : NAIVE BAYES
+		x READ THE THEORY
+		x CODE TO IMPLEMENT
+			x compute_parameters
+			x plot_images
+			x generative_likelihood
+			x conditional_likelihood
+			x avg_conditional_likelihood
+			x classify_data
+		x convert real-valued feats into binary feats
+		x train bernoulli naive bayes classifier w MAP estimation
+			x prior beta(a,b) 
+			x fit the model given in 2.3.2 below on training set
+			x regularize!
+		x plot each eta_k vectors as 8 x 8 grayscale image, side-by-side and same scale
+		x sample one new data point using generative model for each of the 10 classes, plot 8 x 8 grayscale side by side
+		_ compute average conditional log-likelihood on both train and test, report
+		_ select most likely posterior class for each training, test data point, report accuracy
+
+	_ 2.4 : MODEL ACCURACY
+		_ summarize performance of k-NN
+		_ summarize performance of conditional gaussian
+		_ summarize performance of naive bayes
+		_ WHICH PERFORMED BEST AND WORST?
+		_ match expectations?

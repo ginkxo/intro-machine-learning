@@ -1,0 +1,89 @@
+CSC411 ASSIGNMENT 3 WORK
+
+_ PRELIMINARY
+
+	_ Read content on SVMs
+		_ Slide content
+		_ Textbook chapters
+		_ Tutorial Content
+
+
+_ QUESTION 1 [7%]
+	
+	_ RESEARCH GOOD MODELS FOR THIS, change this later
+	_ BASELINE: bernoulli naive bayes model
+	_ model 1: support vector machine
+	_ model 2: multiclass gaussian
+	_ model 3: neural network
+
+	_ read about the tfidf
+	_ review the code and draw the model of what to do here, features and classifications
+
+	_ BERNOULLI NAIVE BAYES
+		_ use the code from last assignment
+		_ train on training set
+		_ get hyperparameters
+		_ report train and test loss
+
+	_ NEURAL NETWORK
+		_ find appropriate code for this
+		_ implement
+		_ hyperparameters
+		_ train and test
+
+	_ k-NN
+		_ find appropriate code for this
+		_ implement
+		_ hyperparameters
+		_ train and test
+
+	_ SUPPORT VECTOR MACHINE
+		_ find appropriate code for this
+		_ implement
+		_ hyperparameters
+		_ train and test
+
+	_ explain how best hyperparameters picked
+	_ explain why three choices picked
+	_ identify best classifier
+	_ create confusion matrix
+	_ what two classes most confusing?
+
+_ QUESTION 2 [4%]
+
+	? SGD with Momentum
+		x implement SGD with momentum
+		x Verify SGD works using the minimum stuff
+
+	_ Training SVM Function
+		_ input: data and classes, penalty parameter, minibatch siz, constant learning rate, number iterations
+		_ implement
+		_ test the function works
+
+	_ Applying on 4 vs 9 digits on MNIST
+		_ turning the data into the binary classification 4 vs 9
+		_ train two SVM models with gradient descent
+			_ model 1:
+				_ training loss
+				_ test loss
+				_ classification accuracy on training set
+				_ classification accuracy on test set
+				_ plot w as 28 x 28 image
+
+			_ model 2:
+				_ training loss
+				_ test loss
+				_ classification accuracy on training set
+				_ classification accuracy on test set
+				_ plot w as 28 x 28 image
+ 
+x QUESTION 3 [4%]
+
+	x positive semidefinite and quadratic form
+		x prove symmetric matrix is positive semidefinite if for all vectors we have such
+
+	x kernel properties:
+		x prove that k(x,y) = a is a kernel for a > 0
+		x prove k(x,y) = f(x)f(y) is a kernel for f
+		x if k1(x,y), k2(x,y) are kernels when k(x,y) = a k1(x,y) + b k2(x,y) is a kernel
+		x if k1(x,y) is a kernel then k(x,y) = k1(x,y) / sqrt(k1(x,x))sqrt(k1(y,y)) is a kernel 

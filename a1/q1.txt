@@ -1,0 +1,70 @@
+== q1 411 ==
+
+Number of data points: 506
+Number of features: 13
+Dimensions: 506 x 13 
+
+Housing values in suburbs of Boston.
+
+Features:
+
+	- CRIM : per capita crime rate by town
+	- ZN : proportion of residential land zoned for lots over 25,000 sq. ft
+	- INDUS : proportion of non-retail business acres per town
+	- CHAS : Charles River dummy variable (= 1 if tract bounds river; 0 else)
+	- NOX : Nitric oxides concentration
+	- RM : Average # of rooms per dwelling
+	- AGE : Proportion of owner-occupied units built prior to 1940
+	- DIS : Weighted distances to five Boston employment centres
+	- RAD : Index of accessibility to radial highways
+	- TAX : Full-value property tax rate
+	- PTRATIO : Pupil-teacher ratio by town
+	- B : Proportion of black residents
+	- LSTAT : % lower status of population
+
+---
+
+[  3.18001489e+01  -1.17464727e-01   4.45725184e-02   2.79338152e-02
+   2.46900487e+00  -1.76990609e+01   4.30501281e+00  -5.11957944e-03
+  -1.44722888e+00   2.97908678e-01  -1.11100479e-02  -9.20370501e-01
+   1.06350019e-02  -4.94875007e-01]
+
+Tabulation:
+
+
+			w
+
+bias		31.8
+crim 		-11.7
+zn 			0.0445
+indus 		0.0279
+chas 		2.46
+nox         -17.6
+rm          4.31
+age         -0.00511
+dis         -1.45
+rad         0.297
+tax         -0.0111
+ptratio     -0.920
+b           0.0106
+lstat       -0.495
+
+indus: expected sign, means that businesses and work may be closer (potentially)
+
+Errors:
+
+	- mean square error : 19.05
+	- mean square log error : 0.03
+	- mean absolute error : 3.83
+
+
+Most significant features:
+
+	- Based on weight:
+		- Crime rate by town (negative correlation)
+		- Nitric oxides concentration (negative correlation)
+		- Average number of rooms per dwelling (positive correlation)
+		- Proximity to Charles River (positive correlation)
+		- Distances to five Boston employment centres (negative correlation)
+
+	

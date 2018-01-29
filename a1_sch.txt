@@ -1,0 +1,57 @@
+=== questions ===
+
+x environment setup: [23 09]
+	x get anaconda
+		x get sklearn
+		x get matplotlib
+		x get numpy
+
+x data setup: [23 09]
+	x get the boston houses dataset
+
+_ q1 : a complete regression analysis of boston housing data [01 10]
+	x load boston housing data from sklearn datasets module
+	x describe, summarize data in terms of data points, dimensions, target etc
+	x VISUALIZATION: single grid with plots for each feature against target
+	x divide data into training and test sets: training is 80% random data points
+	x write linear regression code to predict targets (add bias term)
+	x tabulate each feature w/ assoc. weight, in table. explain sign
+	x test fitted model on test set 
+	x calculate mean squared error of result
+	x suggest and calculate two more error measurement metrics:
+		x error 1
+		x error 2
+	x WHAT ARE THE MOST SIGNIFICANT FEATURES BEST PREDICTING THE PRICE?
+		x JUSTIFY
+
+x q2 : locally reweighted regression [02 10]
+	X 2.1 : math derivation problem (weighted least square solution)
+	x 2.2 : complete implementation of locally reweighted least squares by finishing q1
+		x how does the helper function work?
+		x do we need to calculate the A matrix in LRLS? if so, how do we use the helper function?
+		x once we figure out how to calculate the A matrix, then we can do what we did in q1
+		x will output the same w* as last time 
+	x 2.3 : k-fold cross-val computing average loss for boston houses
+	x 2.4 : algorithm behaviour when r -> inf and r -> 0?
+
+	r -> 0 appears to be somewhere around 110
+	r -> inf is a gentle incline upward around 32 
+
+_ q3 : minibatch sgd gradient estimator [03 10]
+	x 3.1 : show
+	x 3.2 : show
+	x 3.3 : the importance of the above result in one sentence
+	_ 3.4a : write down grad
+	_ 3.4b : write the code to compute grad
+	_ 3.5 : computation
+	_ 3.6 : compare and plot with log
+
+	The importance of the result:
+		We don't need to calculate the gradient of the entire loss function, because ...
+		The expected gradient of our batch is equal to the gradient of the entire function!
+
+_ put stuff into Latex (wednesday)
+
+
+-> min loss fix is 23.41892877647893
+
